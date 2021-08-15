@@ -81,3 +81,26 @@ sudo sh -c "echo $$ >tasks"
 ```shell
 docker run -m 'memory limit'
 ```
+## install docker on linux
+install by script
+```shell
+curl -sSL https://get.daocloud.io/docker | sh
+```
+## test for hello world
+```shell
+sudo docker run hello-world
+```
+## redis for test
+run redis image 
+```shell
+docker run redis
+```
+if the container id is:13231312312dasda
+the you can find some :
+```shell
+/sys/fs/cgroup/memory/docker/b7469b9d3005e49d23106ab1e4c41dd11a442b0c5af7d323dc4d8c0c26ebdee2
+```
+so docker will create restriction cgroup for each container for restriction
+if container is stop they will delete
+## code demo
+
