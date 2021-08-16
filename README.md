@@ -1,2 +1,2 @@
 # Yocker
-yocker is a implementio of docker
+yocker is a implemention of docker
